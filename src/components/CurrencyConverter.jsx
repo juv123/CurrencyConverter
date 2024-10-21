@@ -79,7 +79,7 @@ localStorage.setItem("favorites",JSON.stringify(updatedFavorites))
       <input type="number" onChange={(e)=>setAmount(e.target.value)} className='w-full shadow-sm h-[40px] p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2' />
     </div>
     <div className='flex justify-end mt-6'>
-      <button onClick={convertCurrency} className={`${converting?"animate-pulse":"animate-none"} text-sm bg-blue-500 text-black rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600  focus:ring-offset-4 hover:bg-green-500 `}>Convert</button>
+      <button onClick={convertCurrency} className={` text-sm bg-blue-500 text-black rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600  focus:ring-offset-4 hover:bg-green-500 ${converting?"animate-pulse":"animate-none"} `}>Convert</button>
     </div>
    <div className='text-right text-lg mt-4 text-violet-800 font-bold shadow-2xl'>
     Converted Amount :{convertedAmount} 
